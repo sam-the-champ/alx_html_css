@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    
+}
+.header-wrapper {
+    background-image: url(./Object.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 200px;
+}
+.logo  {
+    align-self: flex-start;
+
+}
+nav {
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 50%;
+   padding: 0;
+   z-index: 10; 
+}
+nav ul {
+       display: flex;
+       justify-content: flex-start;
+       margin: 0;
+       padding: 0;
+       list-style: none;
+}
+nav ul li{
+    margin-left: 100px
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: powderblue;
+}
+.first-section {
+    text-align: center;
+    padding: 50px 20px; /* Add padding for spacing */
+}
+
+.first-section h1 {
+    font-size: 6rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.first-section span {
+    display: inline-block; /* Align spans horizontally */
+    margin: 0 12px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.first-section button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: purple;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.first-section button:hover {
+    background-color: darkviolet; /* Slight hover effect */
+}
+
+.first-section h2 {
+    margin: 50px 0 20px; /* Add space above the heading */
+    font-size: 2rem;
+    color: white;
+}
+
+.first-section div div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+    gap: 50px; /* Add spacing between images */
+}
+
+.first-section div div > div {
+    text-align: center;
+    max-width: 200px; /* Ensure consistent card size */
+}
+
+.first-section img {
+    width: 100%; /* Ensure images fill the div */
+    border-radius: 50px;
+    object-fit: cover;
+
+}
+
+.first-section h3 {
+    margin: 10px 0 0px; /* Add spacing above and below */
+    font-size: 1.2rem;
+    color: white;
+}
+
+.first-section p {
+    font-size: 1rem;
+    color: white;
+
+}
+.second-section {
+    background-color: purple;
+    color: white;
+    padding:  50px 20x;
+    display: flex;
+   
+    align-items: center;
+}
+
+.second-section div {
+    width: 48%; /* Allow each div to take up roughly half the space */
+}
+
+.second-section div img {
+    width: 100%;
+    max-width: 300px; /* Limit the width of the image */
+    margin-right: 0px; /* Space between the image and text */
+    margin-left: 100px;
+    margin-top: 5px;
+
+}
+
+.second-section blockquote {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+
+}
+
+.second-section h3 {
+    font-size: 1.8rem;
+    margin: 5px 0;
+}
+
+.second-section p {
+    font-size: 1rem;
+    color: #ddd; /* Slightly lighter text for the subtitle */
+    margin: 0;
+}
+.third-section h2 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.third-section h2 .purple-text {
+    color: purple;
+}
+
+/* Flexbox for the entire container */
+.third-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Wrapping all video containers in one wrapper for proper alignment */
+.video-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 30px;
+    max-width: 1200px; /* Ensures the videos fit well within the page */
+    margin: 0 auto;
+}
+
+/* Styling for individual video containers */
+.video-container {
+    width: 23%; /* 4 videos in a row, with space between them */
+    background-color: white;
+    padding: 20px;
+    color: black;
+    position: relative;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Thumbnail and play button */
+.video-thumbnail {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.play-button {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+
+/* Title and description */
+h3 {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+    color: #ddd;
+    margin: 5px 0;
+}
+
+/* Author Section Styling */
+.author {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.author-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author h4 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Rating Section */
+.rating {
+    display: flex;
+    margin: 5px 0;
+}
+
+.rating div {
+    color: gold;
+    margin-right: 2px;
+}
+
+.rating i {
+    font-size: 1.2rem;
+}
+
+/* Video Duration */
+.video-container p:last-child {
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* Responsive Handling */
+@media (max-width: 1200px) {
+    .video-container {
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .video-container {
+        width: 100%;
+    }
+}.fourth-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #33062d;
+}
+
+.fourth-section h2 {
+    color: #efebf3; /* Purple color for the heading */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.fourth-section h2 .purple-text{
+    color: #5c2d91;
+}
+
+.membership-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensure items wrap if needed */
+    margin-bottom: 30px;
+}
+
+.membership-item {
+    color: white; /* White text */
+    padding: 20px;
+    border-radius: 10px;
+    width: 22%; /* Adjust width to fit 4 items in one row */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.membership-item img {
+    width: 60px; /* Adjust image size */
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.membership-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.membership-item p {
+    font-size: 1rem;
+}
+
+button {
+    background-color: #5c2d91; /* Purple background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 200px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #4a1f72; /* Slightly darker purple on hover */
+}
+.fifth-class {
+    background-color: white; /* Section background color */
+    color: black; /* Text color */
+    padding: 40px;
+    text-align: center;
+}
+
+.fifth-class h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.faq-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures items wrap onto the next row */
+    gap: 20px; /* Spacing between items */
+    justify-content: center; /* Centers the items horizontally */
+}
+
+.faq-item {
+    width: 45%; /* Ensures two items fit per row */
+    background-color: #f9f9f9; /* Light gray background for FAQ items */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: left; /* Aligns text to the left within each item */
+}
+
+.faq-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .faq-item {
+        width: 100%; /* Stacks items vertically on smaller screens */
+    }
+}
+footer {
+    background-color: #222; /* Dark footer background */
+    color: white; /* White text */
+    padding: 20px;
+}
+
+footer section {
+    max-width: 1200px; /* Limit footer content width */
+    margin: 0 auto;
+}
+
+.footer-top {
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: space-between; /* Spread items to left and right */
+    align-items: center; /* Vertical alignment */
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex; /* Align social icons horizontally */
+    gap: 15px; /* Space between icons */
+}
+
+.social-links i {
+    font-size: 1.5rem; /* Icon size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.social-links i:hover {
+    color: #b96125; /* Highlight color on hover */
+}
+
+.footer-logo {
+    width: 120px; /* Set logo size */
+}
+
+.footer-copyright {
+    text-align: center; /* Center-align copyright text */
+    margin-top: 10px;
+    font-size: 0.9rem; /* Smaller font size */
+}
